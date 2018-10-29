@@ -1,0 +1,53 @@
+All Html elements are essentially little rectangles.
+
+Three important properties control the space that surrounds each HTML element: padding, margin, and border.
+
+An element's padding controls the amount of space between the element's content and its border.
+
+An element's margin controls the amount of space between an element's border and surrounding elements.
+Increasing the margin, increases the distance between its border and surronding elements.
+
+If you set an element's margin to a negative value, the element will grow larger.
+
+CSS allows you to control the padding of all four individual sides of an element with the padding-top, padding-right, padding-bottom, and padding-left properties.
+
+Same goes for margin as well.
+
+But its better to use clockwise notation to specify margin/padding. 
+
+
+We can also use attribute selectors to style elements.
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+
+
+
+The two main types of length units are absolute and relative. 
+Absolute units tie to physical units of length. For example, in and mm refer to inches and millimeters, respectively.
+Relative units, such as em or rem, are relative to another length value. For example, em is based on the size of an element's font. If you use it to set the font-size property itself, it's relative to the parent's font-size.
+
+
+Overriding CSS
+- subsequent CSS overrides
+- id overrieds class CSS
+- inline overrides id
+
+In many cases we use CSS libraries, which may override our custom CSS.  So when you absolutely need to be sure that an element has specific CSS, you can use !important
+
+
+CSS Variables
+--variable-name: gray;   // example of css variable
+
+background: var(--penguin-skin);
+This is how you use your custom css variable;
+
+Fallback value: background: var(--penguin-skin, black);
+
+How to cascade CSS 
+Root element as a container is used for the entire HTML doc. By creating your variables in root, they will be available throughout the whole web page. 
+:root {
+	
+}
+
+use media queries to change a variable. You could define root inside a media query.
