@@ -1,0 +1,62 @@
+Starting off with text-align
+
+text-align: justify
+- causes all lines of text except the last line to meet the left and right edges of the line box.
+
+text-align: center
+- centers the text
+
+text-align: right
+- right aligns the text
+
+text-align: left
+- left aligns the text (default)
+
+<hr/> to create a horizontal line to create distinction in the page.
+
+The box-shadow property applies one or more shadows to an element.
+box-shadow takes values for 
+offset-x: how far to push the shadow horizontally from the element
+offset-y: how far to push the shadow vertically from the element
+blur-radius
+spread-radius
+
+line-height
+CSS offers the line-height property to change the height of each line in a block of text. As the name suggests, it changes the amount of vertical space that each line of text gets.
+
+
+concept of pseudo classes
+A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+example: a:hover
+
+Changing an element's relative position: CSS treats each element as its own
+box which is usually referred to as the CSS box model.
+Block-level items automatically start on a new line.
+while inline items sit within surrounding content (like images or spans). 
+The default layout of elements in this way is called the normal flow of a document, but CSS offers the position property to override it.
+
+When the position of an element is set to relative, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. It pairs with the CSS offset properties of left or right, and top or bottom
+
+position: absolute
+locks the element in place relative to its parent container. 
+Unlike the relative position, this removes the element from the normal flow of the document, so surrounding items ignore it. The CSS offset properties (top or bottom and left or right) are used to adjust the position.
+
+One nuance with absolute positioning is that it will be locked relative to its closest positioned ancestor. If you forget to add a position rule to the parent item, (this is typically done using position: relative;), the browser will keep looking up the chain and ultimately default to the body tag.
+
+position: fixed
+a type of absolute positioning that locks an element relative to the browser window. 
+Similar to absolute positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document. Other items no longer "realize" where it is positioned, which may require some layout adjustments elsewhere.
+One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.
+
+
+float property
+Floating elements are removed from the normal flow of a document and pushed to either the left or right of their containing parent element.
+It's commonly used with the width property to specify how much horizontal space the floated element requires
+
+z-index property
+When elements are positioned to overlap, the element coming later in the HTML markup will, by default, appear on the top of the other elements.
+z-index property can specify the order of how elements are stacked on top of one another. It must be an integer
+higher values for the z-index property of an element move it higher in the stack than those with lower values.
+
+margin: auto
+Setting margin value to auto centers a block element horizontally. It can work on images too by changing them to block elements. img is inline by default.
