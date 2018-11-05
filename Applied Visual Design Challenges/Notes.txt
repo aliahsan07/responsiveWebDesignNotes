@@ -60,3 +60,55 @@ higher values for the z-index property of an element move it higher in the stack
 
 margin: auto
 Setting margin value to auto centers a block element horizontally. It can work on images too by changing them to block elements. img is inline by default.
+
+Hue
+Hue is what people generally think of as 'color'. If you picture a spectrum of colors starting with red on the left, moving through green in the middle, and blue on right, the hue is where a color fits along this line. 
+Saturation
+Saturation is the amount of gray in a color. A fully saturated color has no gray in it, and a minimally saturated color is almost completely gray.
+Lightness 
+Lightness is the amount of white or black in a color. A percentage is given ranging from 0% (black) to 100% (white), where 50% is the normal color.
+
+hsl(hue, saturation, lightness)
+
+
+Gradients on elements
+CSS provides option of color transitions otherwise known as gradient on elements
+This is accessed through the background property's linear-gradient() function. 
+
+repeating-linear-gradient()
+this function is very similar to linear-gradient() with the major difference that it repeats the specified gradient pattern
+
+To change the scale of the element, CSS gives you transform property along with its scale function
+p {
+	transform: scale(2);
+}
+
+transform: skewX()
+
+
+before and after pseduo classes
+For the ::before and ::after pseudo-elements to function properly, they must have a defined content property.
+
+
+To animate an element, you need to know about the animation properties and the @keyframes rule. 
+The animation properties control how the animation should behave and the @keyframes rule controls what happens during that animation. 
+There are eight animation properties in total.
+@keyframes is how to specify exactly what happens within the animation over the duration. 
+
+animation-fill-mode = forwards
+The animation-fill-mode specifies the style applied to an element when the animation has finished. Set it to forwards. 
+
+In CSS animations, the animation-timing-function property controls how quickly an animated element changes over the duration of the animation.
+It tells how an element accelarates or decelerates over the course of animation-duration.
+
+Learn how bezier curve works
+In CSS animations, Bezier curves are used with the cubic-bezier function. 
+The shape of the curve represents how the animation plays out.
+The curve lives on a 1 by 1 coordinate system. The X-axis of this coordinate system is the duration of the animation (think of it as a time scale), and the Y-axis is the change in the animation.
+Cubic-bezier function consists of four main points that sit on this coordinate system. p0, p1, p2 and p3. 
+we have to set values for p1 and p2 manually 
+
+In general, changing the p1 and p2 anchor points drives the creation of different Bezier curves, which controls how the animation progresses through time.
+
+y value greater than 1 -> gives bouncing movement.
+
