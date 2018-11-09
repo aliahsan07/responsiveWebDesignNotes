@@ -1,0 +1,48 @@
+Placing the CSS property CSS:flex on an element allows you to use other flex properties to build a responsive page. 
+
+Adding display: flex to an element turns it into a flex container. 
+This makes it possible to align any children of that element into rows or columns.
+You do this by adding the flex-direction property to the parent item and setting it to row or column. 
+The default value for the flex-direction property is row.
+
+Sometimes the flex items within a flex container do not fill all the space in the container. It is common to want to tell CSS how to align and space out the flex items a certain way.
+
+justify-content
+- center
+- flex-start
+- flex-end
+- space-between
+- space-around
+
+The align-items property is similar to justify-content.
+Flex containers also have a cross axis which is the opposite of the main axis. For rows, the cross axis is vertical and for columns, the cross axis is horizontal.
+
+CSS offers the align-items property to align flex items along the cross axis. For a row, it tells CSS how to push the items in the entire row up or down within the container. And for a column, how to push all the items left or right within the container.
+
+values availible for align-items:
+- flex-start
+- flex-end
+- center
+- stretch
+- baseline
+
+flex-wrap: tells CSS to wrap items
+This means extra items move into a new row or column.
+<IMP>The break point of where the wrapping happens depends on the size of the items and the size of the container.</IMP>
+
+flex-shrink on flex items
+When it's used, it allows an item to shrink if the flex container is too small. Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.
+
+The opposite of flex-shrink is the flex-grow property. 
+
+The flex-basis property specifies the initial size of the item before CSS makes adjustments with flex-shrink or flex-grow.
+auto sizes based on the content.
+
+flex short hand
+default property settings: flex: 0 1 auto; (flex-grow, flex-shrink, flex-basis)
+
+The order property is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.
+
+The final property for flex items is align-self. This property allows you to adjust each item's alignment individually, instead of setting them all at once. This is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-align do not work on flex items.
+
+
